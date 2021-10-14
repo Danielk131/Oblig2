@@ -1,0 +1,188 @@
+@font-face {
+    font-family: Montserrat;
+    src: url(/project/assets/fonts/Montserrat-Bold.ttf);
+}
+
+html {
+    font-size: 14px;
+}
+
+
+body {
+    font-family: Lato, sans-serif;
+    font-size: 1.2rem;
+    width: 100vw;
+    margin:0;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    
+}
+header {
+    height: 55vh;
+    background-image:url(/project/assets/img/studentsbg.png);
+    background-position: center top;
+    background-size: cover;
+    color: white;
+    position: relative;
+    
+    
+}
+
+h1, h2, h3 {
+    font-family: Monteserat, sans-serif;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2.2rem;
+    margin-top: 0; /* er dette riktig?*/
+}
+
+p{
+    max-width: 70ch;
+    line-height: 1.5;
+}
+header div {
+    background-color: #c5192d;
+    position: absolute;
+    align-items: center;
+    width: 95vw;
+    bottom: -4rem;
+    padding: 2rem 2rem 0 2rem;
+    text-align: center;
+    box-sizing: border-box;
+    margin: 0 2.5%; /* lettere? */
+} 
+
+article {
+    margin:0; /* ?*/
+    padding: 2rem 2rem;
+    box-sizing: border-box;
+}  
+    
+article img {
+    max-width: 100%;
+    padding: 0 0 2rem 0; 
+}
+
+article:nth-child(2) {
+    border-bottom: 0.1px solid gray;
+}
+
+img:nth-child(2){
+    padding-bottom: 0;
+}
+
+
+main {
+    box-shadow: 0 0 1px darkgray;
+    background-color: whitesmoke;
+    width: 95vw;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+}
+
+#intro-container {
+    margin-top: 6rem;
+    background-color: #c5192d;
+    padding: 2rem 2rem;
+    margin-bottom: 2rem; /* sjekk */
+    
+    
+}
+#intro-container ul {
+    list-style-type: none;
+    padding-left: 0;
+
+
+}
+
+#intro-container li:nth-child(1)::before {
+    content: "\1F64C";
+    width: 1rem;
+    margin: 1rem 1rem 0 1rem;
+}
+
+
+#intro-container li:nth-child(2)::before {
+    content: "\1F3EB";
+    width: 1rem;
+    margin: 1rem 1rem 0 1rem;
+}
+
+
+#intro-container li:nth-child(3)::before {
+    content: "\1F4DA";
+    width: 1rem;
+    margin: 1rem 1rem 0 1rem;
+}
+
+footer {
+    background-color: #c5192d;
+    color: white;
+    padding: 1.5rem;
+    margin: 2rem 2.5% 0 2.5%;
+    text-align: center;
+    
+}
+
+@media screen and (min-width:600px) {
+    html {
+        font-size: 16px;
+    }
+    header {
+        height: 65vh;
+    }
+
+    header div {
+        margin-right: 7.5vw;
+        margin-left: 7.5vw;
+    }
+    header>div, main, footer {
+        width: 85vw;
+    }
+
+    article {
+        display: inline-block;
+    }
+   
+        
+    
+    div {
+        display:inline-block;
+        width: 45%;
+        margin: 0 2.25%;
+        
+        
+    }
+    img {
+        width: 45%;
+        display: inline-block;
+    }
+
+    article:nth-child(1){
+        background: linear-gradient(90deg,#c5192d 50%, whitesmoke 50%);
+    }
+
+    }
+
+@media screen and (min-width: 960px) {
+    html {
+        font-size: 24px;
+    }
+    header {
+        height: 65vh;
+    }
+    header>div, main, footer {
+        width: 70%;
+    }
+    article {
+        display: inline-block;
+        width: 45%;
+        margin-right: -4px;
+    }
+}
