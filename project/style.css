@@ -44,16 +44,22 @@ p{
     max-width: 70ch;
     line-height: 1.5;
 }
+
+header>div, main, footer {
+    width: 95vw;
+    margin-right: auto;
+    margin-left: auto;
+
+}
 header div {
     background-color: #c5192d;
     position: absolute;
-    align-items: center;
-    width: 95vw;
+    right: 0;
+    left: 0;
     bottom: -4rem;
     padding: 2rem 2rem 0 2rem;
     text-align: center;
     box-sizing: border-box;
-    margin: 0 2.5%; /* lettere? */
 } 
 
 article {
@@ -79,12 +85,8 @@ img:nth-child(2){
 main {
     box-shadow: 0 0 1px darkgray;
     background-color: whitesmoke;
-    width: 95vw;
-    margin-left: auto;
-    margin-right: auto;
-    
-    
 }
+
 
 #intro-container {
     margin-top: 6rem;
@@ -124,8 +126,8 @@ main {
 footer {
     background-color: #c5192d;
     color: white;
-    padding: 1.5rem;
-    margin: 2rem 2.5% 0 2.5%;
+    padding: 1rem;
+    margin-top: 1rem;
     text-align: center;
     
 }
@@ -134,41 +136,62 @@ footer {
     html {
         font-size: 16px;
     }
+
+
     header {
         height: 65vh;
     }
 
-    header div {
-        margin-right: 7.5vw;
-        margin-left: 7.5vw;
-    }
-    header>div, main, footer {
-        width: 85vw;
-    }
-
-    article {
-        display: inline-block;
-    }
-   
-        
     
-    div {
+    div, img {
         display:inline-block;
         width: 45%;
-        margin: 0 2.25%;
-        
-        
     }
+
     img {
-        width: 45%;
-        display: inline-block;
+        padding: 0;
+    }
+
+    header>div, main, footer  {
+        width: 85vw;
+        box-sizing: border-box;
+    }
+    
+
+
+    article {
+        font-size: 0;
+        border-bottom: solid 0.1px gray;
+    }
+
+    article:last-child{
+        border-bottom: 0;
+    }
+
+    article div {
+
+        font-size: 1.2rem;
     }
 
     article:nth-child(1){
         background: linear-gradient(90deg,#c5192d 50%, whitesmoke 50%);
     }
 
+    article div {
+        margin-right: 10%;
     }
+
+    #intro-container {
+        background-color: whitesmoke;
+    }
+
+    
+    #intro-container div:nth-child(2){
+        margin-right: 0;
+}
+}
+
+    
 
 @media screen and (min-width: 960px) {
     html {
@@ -179,10 +202,5 @@ footer {
     }
     header>div, main, footer {
         width: 70%;
-    }
-    article {
-        display: inline-block;
-        width: 45%;
-        margin-right: -4px;
     }
 }
