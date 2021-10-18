@@ -7,9 +7,6 @@ html {
     font-size: 14px;
 }
 
-img {
-    max-width: 100%;
-}
 
 body {
     font-family: Lato, sans-serif;
@@ -19,6 +16,13 @@ body {
     background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
     
 }
+
+
+main {
+    box-shadow: 0 0 1px darkgray;
+    background-color: whitesmoke;
+}
+
 header {
     height: 55vh;
     background-image:url(/project/assets/img/studentsbg.png);
@@ -50,6 +54,11 @@ p{
     line-height: 1.5;
 }
 
+
+img {
+    max-width: 100%;
+}
+
 header>div, main, footer {
     width: 95vw;
     margin-right: auto;
@@ -77,11 +86,6 @@ article:nth-child(2) {
     border-bottom: 0.1px solid gray;
 }
 
-
-main {
-    box-shadow: 0 0 1px darkgray;
-    background-color: whitesmoke;
-}
 
 
 #intro-container {
@@ -119,6 +123,9 @@ main {
     margin: 1rem 1rem 0 1rem;
 }
 
+
+
+
 footer {
     background-color: #c5192d;
     color: white;
@@ -127,6 +134,17 @@ footer {
     text-align: center;
     box-sizing: border-box;
     
+}
+
+@media screen and (max-width:599px) {
+    
+article:nth-of-type(3){
+    transform: scaleY(-1);
+}
+
+article:nth-of-type(3) div, article:nth-of-type(3) img{
+    transform: scaleY(-1);
+}
 }
 
 @media screen and (min-width:600px) {
