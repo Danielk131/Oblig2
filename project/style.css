@@ -20,7 +20,8 @@ header {
     height: 55vh;
     background-image:url(/project/assets/img/studentsbg.png);
     background-position: center top;
-    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     color: white;
     position: relative;
     
@@ -33,6 +34,7 @@ h1, h2, h3 {
 
 h1 {
     font-size: 4rem;
+    padding-top: 0;
 }
 
 h2 {
@@ -57,7 +59,6 @@ header div {
     right: 0;
     left: 0;
     bottom: -4rem;
-    padding: 2rem 2rem 0 2rem;
     text-align: center;
     box-sizing: border-box;
 } 
@@ -66,12 +67,8 @@ article {
     margin:0; /* ?*/
     padding: 2rem 2rem;
     box-sizing: border-box;
-}  
     
-article img {
-    max-width: 100%;
-    padding: 0 0 2rem 0; 
-}
+}  
 
 article:nth-child(2) {
     border-bottom: 0.1px solid gray;
@@ -148,21 +145,25 @@ footer {
         width: 45%;
     }
 
-    img {
-        padding: 0;
-    }
 
     header>div, main, footer  {
         width: 85vw;
         box-sizing: border-box;
     }
+
     
 
 
     article {
         font-size: 0;
         border-bottom: solid 0.1px gray;
+        position: relative;
+    
     }
+
+    
+
+
 
     article:last-child{
         border-bottom: 0;
@@ -177,18 +178,36 @@ footer {
         background: linear-gradient(90deg,#c5192d 50%, whitesmoke 50%);
     }
 
-    article div {
-        margin-right: 10%;
-    }
+    
 
     #intro-container {
         background-color: whitesmoke;
     }
 
     
-    #intro-container div:nth-child(2){
-        margin-right: 0;
+    #intro-container div:first-child{
+        margin-right: 10%;
 }
+
+    article:nth-of-type(odd) img{
+        margin-right: 10%;
+
+    }
+
+    article:nth-of-type(2n) img{
+        margin-left: 10%;
+    }
+
+    article:nth-of-type(2) div{
+        margin-right: 0%;
+
+    }
+
+    img{
+        vertical-align: top;
+    }
+
+    
 }
 
     
