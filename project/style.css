@@ -7,6 +7,9 @@ html {
     font-size: 14px;
 }
 
+img {
+    max-width: 100%;
+}
 
 body {
     font-family: Lato, sans-serif;
@@ -39,7 +42,7 @@ h1 {
 
 h2 {
     font-size: 2.2rem;
-    margin-top: 0; /* er dette riktig?*/
+    margin-top: 0; 
 }
 
 p{
@@ -64,7 +67,7 @@ header div {
 } 
 
 article {
-    margin:0; /* ?*/
+    margin:0;
     padding: 2rem 2rem;
     box-sizing: border-box;
     
@@ -72,10 +75,6 @@ article {
 
 article:nth-child(2) {
     border-bottom: 0.1px solid gray;
-}
-
-img:nth-child(2){
-    padding-bottom: 0;
 }
 
 
@@ -89,7 +88,7 @@ main {
     margin-top: 6rem;
     background-color: #c5192d;
     padding: 2rem 2rem;
-    margin-bottom: 2rem; /* sjekk */
+    margin-bottom: 2rem; 
     
     
 }
@@ -126,6 +125,7 @@ footer {
     padding: 1rem;
     margin-top: 1rem;
     text-align: center;
+    box-sizing: border-box;
     
 }
 
@@ -147,6 +147,7 @@ footer {
 
     img {
         padding: 0;
+        max-width: 100%;
     }
 
     header>div, main, footer  {
